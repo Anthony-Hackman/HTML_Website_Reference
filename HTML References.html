@@ -1,0 +1,236 @@
+<!DOCTYPE html>    
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - HTML</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Manrope:wght@500&family=Quicksand:wght@600&display=swap');
+    hr {
+        border: none;
+        height: 1px;
+        background-color: black;
+        margin: 5;
+        max-width: 2000px;
+        }
+
+    header { 
+        background-image: url('picture1.jpg');
+        background-position: center;
+        max-width: 2000px;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        }
+
+    body {
+        margin: 0;
+        width: auto;
+        color: hwb(0 0% 100%);
+        border: 0px solid hsl(212, 96%, 70%);
+        padding: 10px;
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        }
+
+    footer {
+        font-family: 'Quicksand', sans-serif; 
+        font-size: small; 
+        margin: auto;
+        }
+
+
+    .title {
+        color: #ffffff;
+        position:static;
+        font-family: 'Manrope', sans-serif;
+        font-size: 22pt;
+        margin: 100px;
+        height: 405px;
+        width: 270px;
+        border: 10px solid rgba(255, 255, 255, 0.74);
+        border-radius: 10%;
+        border-bottom: #ffffff;
+        border-top: #ffffff;
+        padding: 5px;
+        text-align: left;
+        background-color: #00000041;
+        }
+
+    .subtitle {
+        margin: auto;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: medium;
+        width: 350px;
+        color: hwb(0 0% 100%);
+        border: 0 solid hsl(212, 96%, 70%);
+        padding: 0;
+        text-align: center;
+        }
+    
+    .sectionHead {
+        border: 5px solid rgb(145, 145, 145);
+        border-radius: 100px;
+        border-top: #ffffff;
+        border-bottom: #ffffff;
+        width: 200px;
+        padding: 0px;
+        margin: 20px;
+        font-family: 'Manrope', sans-serif;
+        font-size: medium;
+        text-align: center;
+        background-color: navy;
+        color: rgb(255, 255, 255);
+        }
+
+    .descript {
+        text-align: justify;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        }
+    
+    footer {
+        font-family: 'Quicksand', sans-serif; 
+        font-size: small; 
+        margin: auto;
+        }
+
+    .flex-container {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        background-color: hwb(0 0% 100%);
+        background-image: url('picture1.jpg');
+        max-width: 2000px;
+        background-size:cover;
+        top: -100px;
+        left: -200px
+        }
+            .flex-container > nav > button {
+                flex-direction: row;
+                border: 3px solid rgba(255, 192, 203, 0.747) ;
+                border-radius: 15%;
+                border-top: #ffffff;
+                border-bottom: #ffffff;
+                color: rgb(255, 255, 255);
+                padding: 1%;
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 12px;
+                transition-duration: 0.7s;
+                cursor: pointer;
+                width: 100px;
+                background-color:rgb(88, 88, 255);
+                }
+                .flex-container > nav > button:hover {
+                    background-color:rgba(255, 192, 203, 0);
+                    color: hsl(0, 0%, 100%);
+                    }
+
+</style>
+
+<header>
+<div class="title"><h1>Hello World.<hr style="background-color: #ffffff;"><div style="text-align: center;">HTML</h1></div>
+<div style="margin: 20px 20px;font-size: 12px;text-align: right;font-style: italic;color: #ffffff;"><br>Right click on this page and view source.</div>
+</header>
+
+<body>
+<div class="subtitle"><h2>References for HTML</h2>
+    <hr>
+    </div><br>
+<div class="flex-container">
+    <nav>
+        <button class="button">HERE</button>
+        <button class="button">ARE</button>
+        <button class="button">BUTTONS</button><div style="margin: 10px;font-size: 12px;text-align: center;font-style: italic;color: #ffffff;"><code>"button"</code> makes any site better </div>
+    </nav>
+</div>
+
+
+<section id="1">
+        <div class="sectionHead"><h3>Section 1</h3></div>
+        <p class="descript"><div style="font-weight: bold ;"> Headers</div><code>"h1 - h6"</code></p>
+        <p class="descript"><div style="font-weight: bold ;"> Navigation links</div><code>"nav"</code></p>
+    <nav>
+        <p></p>
+        <div class="body">
+            <li><a href="/">My Computer</a></li>
+            <li><a href="https://www.w3schools.com">Learn to code with w3schools</a></li>
+            <li><a href="https://www.csszengarden.com/">Examples of CSS</a></li>
+    </nav><br><br>
+    <hr>
+</section>
+
+<section id="2">
+    <div class="sectionHead"><h3>Section 2</h3></div>
+    <p class="descript">Whitespace and formatting</p><br><br>
+        <code>br</code> Line-Break
+        <br><br><br>
+    </div>
+    <pre class="body">
+    <code>pre</code>        "This      is      how         to       preserve        whitespace       in      HTML     " 
+    </pre>
+    <br>
+    <h4 style="width: 50pt;"> Lists!
+    <hr></h4>  
+    <ol>
+        <li style="font-family: Arial, Helvetica, sans-serif;font-size: small"><code>ul</code><br>Unordered list<br>
+        <br></li>
+        <li style="font-family: Arial, Helvetica, sans-serif;font-size: small"><code>ol</code><br>Ordered list<br>
+        <br></li>
+        <li style="font-family: Arial, Helvetica, sans-serif;font-size: small"><code>dl</code><br>Description list<br> 
+        <br></li>
+    </ol>
+    <div class="body">
+    <dl><div style="text-decoration: underline;"><code>dl</code> Description list</div><br>
+        <dt><code>dt</code> Description Term</dt>
+    <dd> <code>dd</code> Description Definition</dd><br> 
+    </dl>
+
+</div>
+<hr>
+</section>
+
+<section id="3">
+<div class="sectionHead"><h3>Section 3</h3></div><br>
+<p class="descript"><div style="font-weight: bold ;"> Tables and cells</div><code>"Table"</code></p>
+    <pre>
+    </pre>
+    <div class="body">
+    <table style="display:grid; fl;">
+    <tr>
+        <code>"th"</code><br><th class="descript"; style= "border:solid; text-align: center; width: 200px;";>Header</th>
+    </tr>
+    <tr>
+        <code>"td"</code><br><td class="descript"; style= "border:1px solid; text-align: center";>Table Data</td>
+    </tr>
+    <tr>
+        <code>"tr"</code><br><td class="descript"; style= "border:1px solid; text-align: center";>Table Row</td>
+    </tr>
+</table>
+</div>
+<br><br>
+<p class="descript"><div style="font-weight: bold ;"> Navigation links</div><code>"nav"</code></p>
+</section>
+</body>
+
+<footer>
+    <br>
+    <br>
+    <div>Google search here<a href="http://www.google.com"><img src="https://www.google.com/images/hpp/ic_wahlberg_product_core_48.png8.png"
+    alt="Google"width="25" height="25"></a>
+    <br>
+    Already have a webpage? Validate with<a href="https://validator.nu"><img src="https://th.bing.com/th?id=ODLS.8dd7e62c-cf7b-4ac9-95d2-10274db169ec&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2"
+    alt="validator"width="25" height="25"></a>
+    <hr>
+<small style="text-align: right; color: blue;">c.2023, Anthony Hackman</small>
+</footer>
+
+</html>
